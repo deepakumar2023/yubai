@@ -1,0 +1,51 @@
+import React from "react";
+import { Grid, CardContent, Typography, Box } from "@mui/material";
+
+const features = [
+  {
+    image: "/becomepartnerimages/INCREMENTAL SALES AND EXPOSURE.png",
+    title: "INCREMENTAL SALES AND EXPOSURE",
+    description:
+      "Increase your sales and reach new customers. Our commercial team is here to make your growth journey simple.",
+  },
+  {
+    image: "/becomepartnerimages/SOPHISTICATED DIGITAL CHANNEL.png",
+    title: "A SOPHISTICATED DIGITAL CHANNEL",
+    description:
+      "Showcase your products with beautiful photos and customize your menu in real-time. A sophisticated, intuitive online experience.",
+  },
+  {
+    image: "/becomepartnerimages/STREAMLINED END-TO-END LOGISTICS.png",
+    title: "STREAMLINED END-TO-END LOGISTICS",
+    description:
+      "Get your products delivered efficiently. We take care of everything from customization to feedback. Unparalleled customer support.",
+  },
+];
+
+const FeatureSection = () => {
+  return (
+    <Grid container spacing={4} justifyContent="center" sx={{ mt: 3,}}>
+      {features.map((feature, index) => (
+        <Grid item xs={12} sm={6} md={4} key={index}>
+          <Box>
+            <img
+              src={feature.image}
+              alt={feature.title}
+              style={{ width: "300px", height: "200px", objectFit: "contain" }}
+            />
+          </Box>
+          <CardContent>
+            <Typography variant="h6" fontWeight="bold" sx={{textAlign:'left',color:"#1B1D4D"}}>
+              {feature.title}
+            </Typography>
+            <Typography variant="body2" color="text.secondary" mt={1} sx={{textAlign:'left'}}>
+              {feature.description}
+            </Typography>
+          </CardContent>
+        </Grid>
+      ))}
+    </Grid>
+  );
+};
+
+export default FeatureSection;
