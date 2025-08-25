@@ -1,10 +1,9 @@
-import { useEffect } from "react";
 
-import { Container, Grid, Box, Typography, useMediaQuery, useTheme } from "@mui/material";
+
+import { Container, Grid, Box, Typography} from "@mui/material";
 
 function Discover5() {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm")); // true on phones
+ 
 
   
 

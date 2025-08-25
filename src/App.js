@@ -5,21 +5,23 @@ import HeroSection from "./pages/HeroSection";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Private from "./pages/Private";
 
-import ScrollToTop from "./component/ScrollToTop";
+// import ScrollToTop from "./component/ScrollToTop";
 import Contact from "./pages/Contact";
 import BecomePartner from "./pages/becomePartner/BecomePartner";
-import AffiliateMarket from "./pages/affaliateMarcket/AffalatteMarcket";
-import AffiliateMarketDetail from "./pages/affaliateMarcket/AffalatteMarcketDetail";
+// import AffiliateMarket from "./pages/affaliateMarcket/AffalatteMarcket";
+// import AffiliateMarketDetail from "./pages/affaliateMarcket/AffalatteMarcketDetail";
 import PrivacyPolicy from "./pages/privatepolicy/PrivacyPolicy";
 import TermsConditions from "./pages/TermsConditions/TermsConditions";
 import PageNotFound from "./pages/PagenotFound";
 import About from "./pages/about/About";
 import RefundReturn from "./pages/Refund&return";
 
-import WhatsAppButton from "./pages/WhatApps";
+// import WhatsAppButton from "./pages/WhatApps";
 import YubaiFAQAccordion from "./pages/Faq";
 import ProductSearch from "./pages/ProductSearch"
 import Support from "./pages/Support/Support";
+import ThankYou from "./component/ThankYou";
+import PaymentFail from "./pages/paymentfail/PaymentFail";
 
 function App() {
   return (
@@ -48,6 +50,8 @@ function App() {
           {/* <Route path="/product" element={<ProductSearch />} /> */}
           <Route path="/amazon-shop" element={<ProductSearch />} />
           <Route path="/support" element={<Support />} />
+          <Route path="/thankyou" element={<ThankYou />} />
+          <Route path="/payment-fail" element={<PaymentFail/>} />
 
           {/* <Route
             path="/affiliate-market/:slug"

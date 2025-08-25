@@ -1,11 +1,8 @@
-import { useEffect } from "react";
 
-import { Container, Grid, Box, Typography, useTheme, useMediaQuery } from "@mui/material";
+
+import { Container, Grid, Box, Typography } from "@mui/material";
 
 function Discover2() {
-
-  
-
   return (
     <Container>
       <Grid container spacing={4} alignItems="center">

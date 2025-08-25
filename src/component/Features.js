@@ -1,8 +1,8 @@
 import { Box } from "@mui/material";
-import Discover3 from "./Discover1";
+// import Discover3 from "./Discover1";
 import Discover from "./Discover";
 import Discover2 from "./Discover2";
-import Discover4 from "./Discover5";
+// import Discover4 from "./Discover5";
 import Discover1 from "./Discover1";
 import Discover5 from "./Discover5";
 

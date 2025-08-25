@@ -1,13 +1,9 @@
-import { Button, Typography } from "@mui/material";
-import { Box, Container } from "@mui/system";
+
+import { Box,} from "@mui/system";
 
 import AppDownloadSection from "../component/AppDownloadSection";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Autoplay } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+
 // import AmazonStyleGrid from "../component/AmazonView";
 // import AmazonCategorySearch from "../component/AmazonCategorySearch";
 import Secondimage from "../component/Secondimage";
@@ -23,16 +19,10 @@ import BannerSlider from "../component/BannerSlider";
 // ];
 
 
-const slides = [
-  "/images/Variant1.png",
-  "/images/Variant2.png",
-  "/images/Variant3.png",
-  "/images/Variant4.png",
-];
 
-const handleClick = () => {
-  alert("Coming Soon!");
-};
+// const handleClick = () => {
+//   alert("Coming Soon!");
+// };
 
 const HeroSection = () => {
   return (

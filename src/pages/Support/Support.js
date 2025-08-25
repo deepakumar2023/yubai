@@ -1,7 +1,7 @@
 "use client";
 import { useState } from "react";
 import {
-  Container,
+ 
   Box,
   TextField,
   Button,
@@ -30,10 +30,32 @@ const Support = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
 
-    const response = await fetch("http://51.20.87.59/api/send-query", {
+  //   const response = await fetch("http://51.20.87.59/api/send-query", {
+  //     method: "POST",
+  //     headers: {
+  //       "Content-Type": "application/json",
+  //     },
+  //     body: JSON.stringify(formData),
+  //   });
+
+  //   if (response.ok) {
+  //     setResponseMessage("Form submitted successfully!");
+  //     alert("Your query will be solved within 24 hours.");
+  //     setFormData({ name: "", email: "", mobile_number: "", query: "" });
+  //   } else {
+  //     setResponseMessage("Error submitting form. Try again.");
+  //   }
+  // };
+
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  try {
+    const response = await fetch("/api/send-query", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -48,7 +70,12 @@ const Support = () => {
     } else {
       setResponseMessage("Error submitting form. Try again.");
     }
-  };
+  } catch (error) {
+    console.error("Error:", error);
+    setResponseMessage("Something went wrong. Please try later.");
+  }
+};
+
 
   return (
     <Box sx={{ marginBottom: '40px' }}>

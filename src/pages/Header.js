@@ -79,9 +79,11 @@ const handleClick = () => {
         >
           <Link href={"/"}   underline="none">
             <img
-              src="/Logo/logo193.png"
+              // src="/Logo/logo193.png"
+              src="/Logo/headericon.png"
               alt="Logo"
-              style={{ width: 150, marginRight: 10 }}
+              // style={{ width: 150, marginRight: 10 }}
+              style={{ width: 100, marginRight: 10 ,height:90,objectFit:"contain"}}
             />
             <br/>
           {/* <Typography variant="h6" component="span" sx={{textDecoration:"none",color:"#d0342c",fontSize:"18px",fontFamily:{xs:"fangsong",sm:"cursive"},fontWeight: "bolder !important",fontStyle:'italic'}}> 
