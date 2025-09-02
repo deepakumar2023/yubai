@@ -17,7 +17,7 @@ function PaymentFail() {
         alignItems: "center",
         justifyContent: "center",
         minHeight: {xs:"400px",sm:"600",md:"100vh"},
-        bgcolor: "grey.100",
+        // bgcolor: "grey.100",
         px: { xs: 2, sm: 4, md: 6 }, // responsive padding
       }}
     >
