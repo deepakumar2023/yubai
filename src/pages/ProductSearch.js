@@ -115,7 +115,7 @@ const handleSearch = (customKeyword) => {
   const totalPages = Math.ceil(allProducts.length / productsPerPage);
 
   return (
-    <Box p={2}>
+    <Box p={2} sx={{height:"100vh"}}>
       <Typography variant="h4" gutterBottom textAlign="center" sx={{color:"#2d3e70",fontWeight: 600,}}>
         Amazon Product Search
       </Typography>
