@@ -198,7 +198,10 @@ const Header = () => {
   }, []);
 
   const handleClick = () => {
-    alert("Coming Soon!");
+    window.open(
+      "https://play.google.com/store/apps/details?id=com.yubai.app",
+      "_blank" // new tab me open hoga
+    );
   };
 
   return (
@@ -251,8 +254,8 @@ const Header = () => {
         sx={{
           objectFit: "contain",
           mr: 1, // marginRight
-          width: { xs: 60, sm: 80, md: 100 }, // responsive width
-          height: { xs: 50, sm: 70, md: 90 }, // responsive height
+          width: { xs: 80, sm: 80, md: 100 }, // responsive width
+          height: { xs: 70, sm: 70, md: 90 }, // responsive height
         }}
       />
           </Link>

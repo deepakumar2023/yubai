@@ -7,69 +7,74 @@ import {
   Typography,
 } from "@mui/material";
 
-import ErrorOutlineIcon from "@mui/icons-material/ErrorOutline";
+
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 function PaymentFail() {
   return (
-    <Box
+  <Box
       sx={{
         display: "flex",
-        alignItems: "center",
+        flexDirection: "column",
         justifyContent: "center",
-        minHeight: {xs:"400px",sm:"600",md:"100vh"},
-        // bgcolor: "grey.100",
-        px: { xs: 2, sm: 4, md: 6 }, // responsive padding
+        alignItems: "center",
+        minHeight: "100vh",
+        textAlign: "center",
+        px: 2,
+        background: "#374D91",
       }}
     >
-      <Card
+      {/* Animation */}
+      <Box
         sx={{
-          width: "100%", // take full width on small screens
-          maxWidth: { xs: "100%", sm: 500, md: 600 }, // responsive max width
-          borderRadius: 4,
-          boxShadow: 6,
-          textAlign: "center",
-          p: { xs: 3, sm: 4 }, // padding adjusts with screen
+          width: "100%",
+          maxWidth: "100%",
+          height: { xs: 250, sm: 300, md: 350 },
+          mb: 2,
         }}
       >
-        <CardContent>
+        <DotLottieReact
+          src="/lottesvg/ERROR Animation.json"
+          loop
+          autoplay
+          style={{
+            width: "100%",
+            height: "100%",
+          }}
+        />
+      </Box>
 
-             <ErrorOutlineIcon
-            sx={{
-              fontSize: { xs: 60, sm: 80 },
-              color: "error.main",
-              mb: 2,
-            }}
-          />
-          <Typography
-            variant="h4"
-            component="h1"
-            sx={{
-              fontWeight: "bold",
-              color: "error.main",
-              mb: { xs: 2, sm: 3 },
-              fontSize: { xs: "2rem", sm: "2.5rem", md: "3rem" }, // responsive font size
-            }}
-          >
-             Payment Failed
-          </Typography>
+      {/* Red Heading */}
+      <Typography
+        variant="h5"
+        sx={{
+         color: "#F7EF6D",
+          fontWeight: "bold",
+          mb: 2,
+        }}
+      >
+        Payment Failed
+      </Typography>
 
-          <Typography
-            variant="body1"
-            sx={{
-              color: "text.secondary",
-              mb: { xs: 3, sm: 4 },
-              fontSize: { xs: "1rem", sm: "1.1rem" }, // smaller on mobile
-              px: { xs: 1, sm: 2 }, // side padding for readability
-            }}
-          >
-             Unfortunately, your payment could not be processed. Please try
-            again or contact our{" "}
-            <Box component="span" sx={{ fontWeight: "bold", color: "primary.main" }}>
-              support team
-            </Box>
-          </Typography>
-        </CardContent>
-      </Card>
+      {/* Message */}
+      <Typography
+        variant="body1"
+        sx={{
+          color: "white",
+          opacity: 0.9,
+          mb: 4,
+          fontSize: { xs: "0.95rem", sm: "1.05rem" },
+          lineHeight: 1.6,
+          px: { xs: 1, sm: 4 },
+        }}
+      >
+        Unfortunately, your payment could not be processed. Please try again or
+        contact our{" "}
+        <Box component="span" sx={{ fontWeight: "bold", color: "#F7EF6D" }}>
+          support team
+        </Box>
+        .
+      </Typography>
     </Box>
   )
 }
