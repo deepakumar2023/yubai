@@ -25,9 +25,12 @@ function Layout() {
   const location = useLocation();
   const hideFooterRoutes = ["/thankyou","/payment-fail","/privacy-policy","/terms-condition","/cancellation-policy"];
 
+  const hideHeaderRoutes = ["/thankyou","/payment-fail",];
+
   return (
     <div className="App">
-      <Header />
+
+      {!hideHeaderRoutes.includes(location.pathname) &&    <Header />}
       <Routes>
         <Route path="/" element={<HeroSection />} />
         <Route path="/private" element={<Private />} />
