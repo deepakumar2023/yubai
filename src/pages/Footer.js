@@ -3,8 +3,8 @@ import { Box, Container, Link, Grid } from "@mui/material";
 export default function Footer() {
   const links = [
     { href: "/termscondition", label: "Terms & Conditions" },
-    { href: "/privacyPolicy", label: "Privacy Policy" },
-    { href: "/refund-return", label: "Refund & Return Policy" },
+    { href: "/privacypolicy", label: "Privacy Policy" },
+    { href: "/refundreturn", label: "Refund & Return Policy" },
     { href: "/about-page", label: "About" },
     { href: "/yubai-faq", label: "Faq" },
     { href: "/contact", label: "Contact" },

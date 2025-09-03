@@ -20,10 +20,11 @@ import CancellationPolicy from "./pages/CancellationPolicy";
 import PrivacyPolicyweb from "./pages/PrivacyPolicyweb";
 import TermsConditionweb from "./pages/TermsConditionweb";
 import CancellationPolicyweb from "./pages/CancellationPolicyweb";
+import RefundReturnweb from "./pages/RefundReturnweb";
 
 function Layout() {
   const location = useLocation();
-  const hideFooterRoutes = ["/thankyou","/payment-fail","/privacy-policy","/terms-condition","/cancellation-policy"];
+  const hideFooterRoutes = ["/thankyou","/payment-fail","/privacy-policy","/terms-condition","/cancellation-policy","/refund-return"];
 
   const hideHeaderRoutes = ["/thankyou","/payment-fail",];
 
@@ -43,6 +44,7 @@ function Layout() {
         <Route path="*" element={<PageNotFound />} />
         <Route path="/about-page" element={<About />} />
         <Route path="/refund-return" element={<RefundReturn />} />
+        <Route path="/refundreturn" element={<RefundReturnweb />} />
         <Route path="/yubai-faq" element={<YubaiFAQAccordion />} />
         <Route path="/amazon-shop" element={<ProductSearch />} />
         <Route path="/support" element={<Support />} />

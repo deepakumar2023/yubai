@@ -187,7 +187,7 @@ const Header = () => {
   const location = useLocation(); // <-- Added
 
   // Routes where drawer (hamburger) should not be shown
-  const hideDrawerRoutes = ["/thankyou", "/payment-fail",'/privacy-policy',"/terms-condition","/cancellation-policy"];
+  const hideDrawerRoutes = ["/thankyou", "/payment-fail",'/privacy-policy',"/terms-condition","/cancellation-policy","/refund-return"];
 
   useEffect(() => {
     const handleScroll = () => {
