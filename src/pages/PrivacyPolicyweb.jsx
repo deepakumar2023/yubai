@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Typography, Paper, Box } from "@mui/material";
 
-const PrivacyPolicy = () => {
+const PrivacyPolicyweb= () => {
   return (
     <Container sx={{ mt: 4, mb: 4 }}>
       <Paper elevation={0} sx={{ p: 4 }}>
@@ -295,4 +295,4 @@ const PrivacyPolicy = () => {
   );
 };
 
-export default PrivacyPolicy;
+export default PrivacyPolicyweb;
